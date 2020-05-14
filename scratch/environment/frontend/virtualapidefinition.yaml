@@ -1,0 +1,14 @@
+apiVersion: v1alpha1
+group: management
+scope: scratch
+kind: VirtualAPIDefinition
+title: Echo Server V1
+name: echov1
+tags:
+  - frontend
+  - echo
+attributes:
+    version: 1.0.0
+spec:
+    description: Governance rules for v1 of Echo Server.
+    virtualAPI: echo

@@ -1,0 +1,21 @@
+apiVersion: v1alpha1
+group: management
+scope: scratch
+kind: JWTAuthRule
+title: JWT AuthRule for Echo v1
+name: echoauth
+spec:
+    virtualAPIDefinition: echov1
+    policy: writersauth
+---
+apiVersion: v1alpha1
+group: management
+scope: scratch
+kind: APIKeyAuthRule
+title: API Key AuthRule for Echo v1
+name: echoauth
+spec:
+    virtualAPIDefinition: echov1
+    in: header
+    name: api-key
+---

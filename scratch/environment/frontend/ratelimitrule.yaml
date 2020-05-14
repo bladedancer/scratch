@@ -1,0 +1,9 @@
+apiVersion: v1alpha1
+group: management
+scope: scratch
+kind: RateLimitRule
+title: Rate limit for Echo v1
+name: echoratelimit
+spec:
+    virtualAPIDefinition: echov1
+    transactionPerSecond: 100

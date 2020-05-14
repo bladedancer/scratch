@@ -1,0 +1,9 @@
+apiVersion: v1alpha1
+group: management
+kind: Gateway
+title: Axway Edge API Gateway
+name: axway-edge-scratch
+tags: ["axway", "edge", "v7"]
+spec:
+  description: Axway Edge API Gateway.
+  type: axway

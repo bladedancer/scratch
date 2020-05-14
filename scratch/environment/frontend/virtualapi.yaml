@@ -1,0 +1,11 @@
+apiVersion: v1alpha1
+group: management
+scope: scratch
+kind: VirtualAPI
+title: Echo Server
+name: echo
+tags:
+  - frontend
+  - echo
+spec:
+    description: Governance for Echo Server

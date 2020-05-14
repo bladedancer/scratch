@@ -1,0 +1,9 @@
+apiVersion: v1alpha1
+group: management
+scope: scratch
+kind: Deployment
+title: Echo v1 on Axway API Gateway
+name: echov1axway1589463282395091700
+spec:
+    virtualAPIDefinition: echov1
+    gatewayStage: axway-edge-scratch/api-development

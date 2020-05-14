@@ -1,0 +1,14 @@
+# Not sure if this is a good idea or not...for now a stage per org id
+apiVersion: v1alpha1
+group: management
+scope: axway-edge-scratch
+kind: Stage
+title: API Development
+name: api-development
+tags: ["axway", "edge", "v7", "api-development"]
+spec:
+    description: Stage for API Development org.
+    policies:
+        writersauth: axway-tokenauth
+        readersauth: axway-tokenauth
+    organizationId: 3576555d-8cb2-4293-95aa-f501451b5174

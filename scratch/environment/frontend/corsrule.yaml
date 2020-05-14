@@ -1,0 +1,19 @@
+apiVersion: v1alpha1
+group: management
+scope: scratch
+kind: CorsRule
+title: CORS Rule on Echo V1
+name: echocors
+spec:
+    description: Cross-Origin Resource Sharing rule for the Echo Virtual API.
+    virtualAPIDefinition: echov1
+    accessControlAllowOrigin: "*"
+    accessControlMaxAge: 600
+    accessControlAllowHeaders:
+        - Location
+        - X-Axway-Tenant-Id
+    accessControlAllowMethods:
+        - GET
+        - PUT
+        - POST
+        - DELETE

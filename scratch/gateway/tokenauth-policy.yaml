@@ -1,0 +1,18 @@
+apiVersion: v1alpha1
+group: management
+scope: axway-edge-scratch
+kind: Policy
+title: Simple Auth Policy
+name: axway-tokenauth
+tags: ["axway", "edge", "auth"]
+spec:
+    description: Simple auth example.
+    type: jwt
+    config:
+        authenticationPolicy: "<key type='CircuitContainer'><id field='name' value='CentralDemo'/><key type='FilterCircuit'><id field='name' value='OnlyFredTok'/></key></key>"
+        useClientRegistry: "false"
+        subjectSelector: "${authentication.subject.id}"
+        descriptionType: "original"
+        descriptionUrl: ""
+        descriptionMarkdown: ""
+        description: ""

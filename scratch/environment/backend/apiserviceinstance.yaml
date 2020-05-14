@@ -1,0 +1,19 @@
+apiVersion: v1alpha1
+group: management
+scope: scratch
+kind: APIServiceInstance
+title: Echo API V1 on ARS
+name: echov1ars
+attributes:
+  version: 1.0.1
+tags:
+  - backend
+  - echo
+spec:
+  apiServiceRevision: echov1
+  endpoint:
+  - host: "78.152.202.149"
+    port: 48080
+    protocol: "http"
+    routing:
+      basePath: "/api"
