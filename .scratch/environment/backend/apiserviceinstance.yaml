@@ -12,7 +12,7 @@ tags:
 spec:
   apiServiceRevision: echov1
   endpoint:
-  - host: "78.152.202.149"
+  - host: "bladedancer.asuscomm.com"
     port: 48080
     protocol: "http"
     routing:
